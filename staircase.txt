@@ -1,0 +1,55 @@
+/*This for created for js*/
+for(let i = 0; i < n; i++){
+  let t = n-i-1;
+  let space = '';
+  let charPrint = '';
+  for(let s = t; s > 0; s--){
+    space += ' ';
+  };     
+  for(let j = 0; j < i+1; j++){
+    charPrint += '#';
+  };
+  console.log(space + '' + charPrint);
+}
+
+/*This for created for php*/
+for($i = 0; $i < $n; $i++){
+        $t = $n-$i-1;
+        $space = '';
+        $charPrint = '';
+       for($s = $t; $s > 0; $s--){
+            $space .= ' ';
+
+        };     
+        for($j = 0; $j < $i+1; $j++){
+            $charPrint .= '#';
+        };
+    
+        print($space . "" . $charPrint . "\n");
+    }
+    
+/*This for created for python*/    
+for i in range(n):
+        t = n-i-1
+        space = ''
+        charPrint = ''
+        s = t
+        for s in range(s, 0, -1):
+            space += ' '               
+        for j in range(i+1):
+            charPrint += '#'
+        print(space + "" + charPrint)
+        
+/*This for created for Java 8*/         
+for(int i = 0; i < n; i++){
+            int t = n-i-1;
+            String space = "";
+            String charPrint = "";
+            for(int s = t; s > 0; s--){
+                space += ' ';
+            }     
+            for(int j = 0; j < i+1; j++){
+                charPrint += "#";
+            }
+            System.out.println(space + "" + charPrint);
+        }
