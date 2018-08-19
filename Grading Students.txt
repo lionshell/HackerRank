@@ -1,0 +1,25 @@
+function gradingStudents(grades) {
+    /*
+     * Write your code here.
+     */
+    var len = grades.length;
+    var arrNewMark = [];
+    var t = [];
+    for(let i = 0; i < len; i++){
+        if(grades[i] < 38){
+           arrNewMark.push(grades[i]);
+        }else{
+            let x = grades[i] % 5;
+            let y = Math.floor(grades[i] / 5);
+            let z = (y * 5) + 5;
+            let d = z - grades[i];
+            if(d < 3){
+                    arrNewMark.push(z); 
+                }else{
+                    arrNewMark.push(grades[i]);  
+                }
+        }
+    }
+    
+return arrNewMark;
+}
