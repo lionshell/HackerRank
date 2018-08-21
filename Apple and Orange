@@ -1,0 +1,28 @@
+function countApplesAndOranges(s, t, a, b, apples, oranges) {
+    //s: integer, starting point of Sam's house location.
+    //t: integer, ending location of Sam's house location.
+    //a: integer, location of the Apple tree.
+    //b: integer, location of the Orange tree.
+    //apples: integer array, distances at which each apple falls from the tree.
+    //oranges: integer array, distances at which each orange falls from the tree. 
+
+    var countA = 0; // no of Apples have fallen within range
+    var countO = 0; // no of Oranges have fallen within range
+    var lenApp = apples.length;
+    var lenOra = oranges.length;
+    for(let i = 0; i < lenApp; i++){
+        let x = a + apples[i];
+        if(x >= s && x <= t){
+            ++countA;
+        }
+    }
+    
+    for(let i = 0; i < lenOra; i++){
+        let x = b + oranges[i];
+        if(x >= s && x <= t){
+            ++countO;
+        }
+    }
+    
+    console.log(countA + '\n' + countO);
+}
